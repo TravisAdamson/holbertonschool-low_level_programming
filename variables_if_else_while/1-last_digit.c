@@ -3,14 +3,15 @@
 #include <stdio.h>
 
 /**
- * main - Displays a random number and compares to 
+ * main - Displays a random number and compares to
  * set conditions
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int n; int lastDigit;
+	int n; 
+	int lastDigit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
