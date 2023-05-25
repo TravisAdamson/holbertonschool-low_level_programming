@@ -9,15 +9,24 @@
 int main(void)
 {
 	int n;
+	int s;
 	int g = 44;
 
 
 	for (n = 48 ; n < 58 ; n++)
 	{
-		putchar(n);
-		if (n != 57)
-			putchar(g);
+		for (s = 48 ; s < 58 ; s++)
+		{
+			putchar(n);
+			putchar(s);
+			if (s == 57)
+			{
+				if (n == 57)
+					putchar('\n');
+			}
+			else
+				putchar(g);
+		}
 	}
-	putchar('\n');
 	return (0);
 }
