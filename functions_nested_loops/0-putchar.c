@@ -14,7 +14,7 @@ int main(void)
 	
 	for (i = 0; i < s; i++)
 	{
-			_putchar(a[b]);
+			_putchar(a[i]);
 	}
 
 	_putchar('\n');
