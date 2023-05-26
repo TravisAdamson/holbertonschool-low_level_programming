@@ -12,7 +12,7 @@ int main(void)
 	int s = sizeof(a);
 	int i;
 	
-	for (b = 0; b < s; b++)
+	for (i = 0; i < s; i++)
 	{
 			_putchar(a[b]);
 	}
