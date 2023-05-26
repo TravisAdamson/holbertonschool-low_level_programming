@@ -4,7 +4,7 @@
 /**
  * _islower - checks if a character is lower case
  *
- * Return: Returns a true or false value
+ * Return: Returns a value based on parameter c
  */
 int _islower(int c)
 {
