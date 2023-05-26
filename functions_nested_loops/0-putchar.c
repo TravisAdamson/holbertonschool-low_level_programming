@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	char a[] ="_putchar";
+	char a[] = "_putchar";
 	int s = sizeof(a);
 	int i;
 
