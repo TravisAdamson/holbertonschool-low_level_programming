@@ -12,9 +12,10 @@ int main(void)
 	int s = sizeof(a);
 	int i;
 
-	for (i = 0; i < s; i++)
+	for (i = 1; i < s; i++)
 	{
 		_putchar(a[i]);
 	}
+	_putchar('\n');
 	return (0);
 }
