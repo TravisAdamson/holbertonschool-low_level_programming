@@ -3,7 +3,7 @@
 
 /**
  * _islower - checks if a character is lower case
- * c - passed from function call
+ * int c: passed from function call
  *
  * Return: Returns a value based on parameter c
  */
