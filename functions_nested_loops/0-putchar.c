@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - Calls the function _putchar to print with
@@ -7,11 +8,14 @@
  */
 int main(void)
 {
-	int n;
-
-	for (n = 0 ; n < 10 ; n++)
-	{
-		_putchar(n);
-	}
-	return (0);
+	char b[8] = "_putchar";
+	_putchar(b);
+	_putchar(b);
+	_putchar(b);
+	_putchar(t);
+	_putchar(c);
+	_putchar(h);
+	_putchar(a);
+	_putchar(r);
+	return(0);
 }
