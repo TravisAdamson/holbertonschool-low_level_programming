@@ -7,7 +7,7 @@
  *
  * Return: Returns a value based on parameter c
  */
-int _islower(int c) 
+int _islower(int c)
 {
 	int b;
 
