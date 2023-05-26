@@ -8,6 +8,7 @@
  * Return: Returns a value based on parameter c
  */
 int _islower(int c)
+	// int c passed from function call
 {
 	int b;
 
