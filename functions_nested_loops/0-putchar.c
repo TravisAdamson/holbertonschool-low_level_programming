@@ -10,11 +10,11 @@ int main(void)
 {
 	char a[] = "_putchar";
 	int s = sizeof(a);
-	int i;
+	int b;
 
-	for (i = 0; i < s; i++)
+	for (b = 0; b < s; b++)
 	{
-		_putchar(a[i]);
+		_putchar(a[b]);
 	}
 	_putchar('\n');
 	return (0);
