@@ -3,9 +3,9 @@
 
 /**
  * _islower - checks if a character is lower case
- * int c: passed from function call
+ * @c: character to be compared
  *
- * Return: Returns a value based on parameter c
+ * Return: Returns a true or false value
  */
 int _islower(int c)
 {
