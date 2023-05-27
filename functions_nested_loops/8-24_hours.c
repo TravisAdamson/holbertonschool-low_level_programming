@@ -19,7 +19,7 @@ int jack_bauer(void)
 		{
 			for (t = 48; t < 54; t++)
 			{
-				for (f2 = 48; f2 < 57; f2++)
+				for (f2 = 48; f2 < 59; f2++)
 				{
 					_putchar(f);
 					_putchar(s);
