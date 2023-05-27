@@ -23,7 +23,7 @@ int jack_bauer(void)
 				m = 51;
 				s = 58;
 			}
-			else 
+			else
 				m = s;
 			for (t = 48; t < 54; t++)
 			{
