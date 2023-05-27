@@ -13,13 +13,13 @@ int jack_bauer(void)
 	int t;
 	int f2;
 
-	for (f = 49; f < 51; f++)
+	for (f = 48; f < 51; f++)
 	{
-		for (s = 49; s < 53; s++)
+		for (s = 48; s < 53; s++)
 		{
-			for (t = 49; t < 54; t++)
+			for (t = 48; t < 54; t++)
 			{
-				for (f2 = 49; f2 < 57; f2++)
+				for (f2 = 48; f2 < 57; f2++)
 				{
 					_putchar(f);
 					_putchar(s);
