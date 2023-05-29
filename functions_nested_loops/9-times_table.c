@@ -18,18 +18,20 @@ void times_table(void)
 	{
 		for (b = 0; b < 10; b++)
 		{
-			total=(i*b);
+			total = (i * b);
 			if (total > 9)
 			{
-				ld=(total %10);
-				fd=(total/10);
-				_putchar(fd+48);
-				_putchar(ld+48);
+				ld = (total % 10);
+				fd = (total / 10);
+				_putchar(fd + 48);
+				_putchar(ld + 48);
+				_putchar(44);
 				_putchar(32);
 			}
 			else
-			{	
-				_putchar(total+48);
+			{
+				_putchar(total + 48);
+				_putchar(44);
 				_putchar(32);
 			}
 		}
