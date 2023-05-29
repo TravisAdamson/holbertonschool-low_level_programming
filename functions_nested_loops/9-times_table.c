@@ -25,13 +25,14 @@ void times_table(void)
 				fd = (total / 10);
 				_putchar(fd + 48);
 				_putchar(ld + 48);
-				_putchar(44);
-				_putchar(32);
+				if (b != 9)
+					_putchar(44);
 			}
 			else
 			{
 				_putchar(total + 48);
-				_putchar(44);
+				if (b != 9)
+					_putchar(44);
 				_putchar(32);
 			}
 		}
