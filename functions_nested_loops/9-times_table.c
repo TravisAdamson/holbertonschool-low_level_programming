@@ -26,9 +26,10 @@ void times_table(void)
 				_putchar(fd + 48);
 				_putchar(ld + 48);
 				if (b != 9)
+				{
 					_putchar(44);
-				if ((i != 9) || (b != 9))
 					_putchar(32);
+				}
 			}
 			else
 			{
