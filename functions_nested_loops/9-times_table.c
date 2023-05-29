@@ -31,7 +31,7 @@ void times_table(void)
 			}
 			else
 			{
-				if (b != 0)
+				if (b > 1)
 					_putchar(32);
 				_putchar(total + 48);
 				if (b != 9)
