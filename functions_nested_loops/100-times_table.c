@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * times_table - Prints the times table based on n
+ * print_times_table - Prints the times table based on n
  * @n: upper limit of the times table
  *
  * Return: No Return value
