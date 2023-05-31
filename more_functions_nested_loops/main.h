@@ -2,6 +2,6 @@
 #define MAIN_H
 
 int _putchar(char);
-void print_line(int);
+void print_diagonal(int);
 
 #endif /* MAIN_H */
