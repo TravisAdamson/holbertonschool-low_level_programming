@@ -2,6 +2,6 @@
 #define MAIN_H
 
 int _putchar(char);
-void more_numbers(void);
+void print_line(int);
 
 #endif /* MAIN_H */
