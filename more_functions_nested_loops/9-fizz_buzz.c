@@ -16,11 +16,11 @@ int main(void)
 	{
 		b = i % 3;
 		c = i % 5;
-		if ((b = 0) && (c = 0))
+		if ((b == 0) && (c == 0))
 			printf("FizzBuzz ");
-		else if (b = 0)
+		else if (b == 0)
 			printf("Fizz ");
-		else if (c = 0)
+		else if (c == 0)
 			printf("Buzz ");
 		else
 			printf("%d ", i);
