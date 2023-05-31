@@ -2,6 +2,6 @@
 #define MAIN_H
 
 int _putchar(char);
-int mul(int, int);
+void print_numbers(void);
 
 #endif /* MAIN_H */
