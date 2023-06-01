@@ -4,6 +4,6 @@
 #include "2-strlen.c"
 
 int _putchar(char);
-int _puts(char *str);
+void _puts(char *str);
 
 #endif /* MAIN_H */
