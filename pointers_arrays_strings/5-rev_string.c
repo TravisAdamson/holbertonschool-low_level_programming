@@ -12,7 +12,6 @@ void rev_string(char *s)
 	int l;
 	int n;
 	int g;
-	char t[];
 
 	l = 0;
 	n = 0;
@@ -23,6 +22,8 @@ void rev_string(char *s)
 	}
 	s--;
 	l--;
+	char t[l];
+
 	while (l >= 0)
 	{
 		t[n] = *s;
