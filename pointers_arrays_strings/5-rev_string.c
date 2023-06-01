@@ -31,9 +31,10 @@ void rev_string(char *s)
 		n++;
 		t++;
 	}
+	t = 0;
 	for (g = 0; g <= n; g++)
 	{
-		*s = *t[g];
+		*s = *t;
 		s++;
 	}
 }
