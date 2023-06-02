@@ -34,6 +34,8 @@ int _atoi(char *s)
 		}
 		else if (nv > 0)
 			break;
+		else
+			i++;
 	}
 	if ((sv < 0) && (pv == 0))
 		nv = nv * -1;
