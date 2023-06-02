@@ -12,9 +12,11 @@ void puts_half(char *str)
 	int n;
 	int l;
 	int g;
+	int m;
 
 	n = 0;
 	l = 0;
+	m = 0;
 	while (*str != '\0')
 	{
 		l++;
@@ -28,9 +30,9 @@ void puts_half(char *str)
 		str--;
 	while (*str != '\0')
 	{
-		if (g >= n)
+		if (m >= n)
 			_putchar(*str);
-		g++;
+		m++;
 		str++;
 	}
 	_putchar('\n');
