@@ -9,7 +9,7 @@
  */
 int _atoi(char *s)
 {
-	int nv;
+	unsigned int nv;
 	int i;
 	int sv;
 	int tv;
