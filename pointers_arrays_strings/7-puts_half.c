@@ -30,10 +30,8 @@ void puts_half(char *str)
 	else
 		n = l / 2;
 	for (g = l; g >= 0; g--)
-	{
-		_putchar(g + 48);
 		str--;
-	}
+	_putchar(*str);
 	while (*str != '\0')
 	{
 		if (m >= n)
