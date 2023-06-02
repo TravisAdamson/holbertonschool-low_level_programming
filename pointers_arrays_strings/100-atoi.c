@@ -18,9 +18,7 @@ int _atoi(char *s)
 	sv = 0;
 	while (s[i] != '\0')
 	{
-		if (s[i] == 43)
-			sv++;
-		else if (s[i] == 45)
+		if (s[i] == 45)
 			sv--;
 		if ((s[i] >= 48) && (s[i] <= 57))
 			nv = (nv * 10) + (s[i] - 48);
