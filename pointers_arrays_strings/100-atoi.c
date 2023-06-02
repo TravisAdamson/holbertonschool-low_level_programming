@@ -12,7 +12,6 @@ int _atoi(char *s)
 	int nv;
 	int i;
 	int sv;
-	int st;
 
 	i = 0;
 	nv = 0;
