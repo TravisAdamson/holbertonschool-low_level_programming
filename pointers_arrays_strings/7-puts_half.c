@@ -31,6 +31,7 @@ void puts_half(char *str)
 		n = l / 2;
 	for (g = l; g >= 0; g--)
 		str--;
+	str++;
 	_putchar(*str);
 	while (*str != '\0')
 	{
