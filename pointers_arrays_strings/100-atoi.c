@@ -12,10 +12,12 @@ int _atoi(char *s)
 	int nv;
 	int i;
 	int sv;
+	int st;
 
 	i = 0;
 	nv = 0;
 	sv = 0;
+	st = 0;
 	while (s[i] != '\0')
 	{
 		if (s[i] == 43)
@@ -24,7 +26,11 @@ int _atoi(char *s)
 	 		sv --;		
 		if ((s[i] >= 48) && (s[i] <= 57))
 			nv = nv + s[i] - 48;
+		else
+			st++;
 		i++;
 	}
+	if (sv < 0)
+		nv = nv * -1;
 	return (nv);
 }
