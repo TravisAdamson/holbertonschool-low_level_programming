@@ -18,12 +18,12 @@ int _atoi(char *s)
 	sv = 0;
 	while (s[i] != '\0')
 	{
-		if (s[i] = '+')
+		if (s[i] == 43)
 		       sv++;
-		else if (s[i] = '-')
+		else if (s[i] == 45)
 	 		sv --;		
-		if ((s[i] >= 0) && (s[i] <= 9))
-			nv = nv + s[i];
+		if ((s[i] >= 48) && (s[i] <= 57))
+			nv = nv + s[i] - 48;
 		i++;
 	}
 	return (nv);
