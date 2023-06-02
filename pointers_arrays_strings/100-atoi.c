@@ -18,26 +18,25 @@ int _atoi(char *s)
 	i = 0;
 	nv = 0;
 	sv = 0;
-	pv = 0;
 	tv = 0;
 	while (s[i] != '\0')
 	{
 		if (s[i] == 45)
 			sv--;
 		else if (s[i] == 43)
-			pv++;
+			sv++;
 		if ((s[i] >= 48) && (s[i] <= 57))
 		{
 			tv = s[i] - 48;
 			nv = (nv * 10) + tv;
 			i++;
 		}
-		else if (nv > 0)
-			break;
+		else if (nv == 0)
+			i++;;
 		else
-			i++;
+			break;
 	}
-	if ((sv < 0) && (pv == 0))
+	if (sv < 0)
 		nv = nv * -1;
 	return (nv);
 }
