@@ -23,10 +23,7 @@ void puts_half(char *str)
 		str++;
 	}
 	if (l % 2 != 0)
-	{
 		n = (l - 1) / 2;
-		_putchar(n + 48);
-	}
 	else
 		n = l / 2;
 	for (g = l; g >= 0; g--)
