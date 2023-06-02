@@ -14,13 +14,14 @@ void puts_half(char *str)
 	int g;
 
 	n = 0;
+	l = 0;
 	while (*str != '\0')
 	{
 		l++;
 		str++;
 	}
 	if (l % 2 != 0)
-		n = (l -1) / 2;
+		n = (l - 1) / 2;
 	for (g = l; g >= 0; g--)
 		str--;
 	while (*str != '\0')
@@ -29,6 +30,6 @@ void puts_half(char *str)
 			_putchar(*str);
 		g++;
 		str++;
-	}	
+	}
 	_putchar('\n');
 }
