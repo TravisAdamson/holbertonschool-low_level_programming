@@ -2,6 +2,6 @@
 #define MAIN_H
 
 int _putchar(char);
-void puts_half(char *str);
+void print_array(int *a, int n);
 
 #endif /* MAIN_H */
