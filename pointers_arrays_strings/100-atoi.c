@@ -18,9 +18,9 @@ int _atoi(char *s)
 	sv = 0;
 	while (s[i] != '\0')
 	{
-		if (s[i] == "+")
-		       sv++
-		else if (s[i] == "-")
+		if (s[i] = "+")
+		       sv++;
+		else if (s[i] = "-")
 	 		sv --		
 		if ((s[i] >= 0) && (s[i] <= 9))
 			nv = nv + s[i];
