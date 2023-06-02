@@ -21,9 +21,10 @@ int _atoi(char *s)
 	while (s[i] != '\0')
 	{
 		if (s[i] == 45)
-			sv--;
-		else if (s[i] == 43)
-			sv++;
+			if (sv < 0)
+				sv = sv * -1;
+			else
+				sv--;;
 		if ((s[i] >= 48) && (s[i] <= 57))
 		{
 			tv = s[i] - 48;
