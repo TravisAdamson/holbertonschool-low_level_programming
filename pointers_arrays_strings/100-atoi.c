@@ -17,17 +17,14 @@ int _atoi(char *s)
 	i = 0;
 	nv = 0;
 	sv = 0;
-	st = 0;
 	while (s[i] != '\0')
 	{
 		if (s[i] == 43)
-		       sv++;
+			sv++;
 		else if (s[i] == 45)
-	 		sv --;		
+	 		sv--;
 		if ((s[i] >= 48) && (s[i] <= 57))
-			nv = nv + s[i] - 48;
-		else
-			st++;
+			nv = (nv*10) + s[i] - 48;
 		i++;
 	}
 	if (sv < 0)
