@@ -12,7 +12,6 @@ int _atoi(char *s)
 	int nv;
 	int i;
 	int sv;
-	int pv;
 	int tv;
 
 	i = 0;
@@ -32,7 +31,7 @@ int _atoi(char *s)
 			i++;
 		}
 		else if (nv == 0)
-			i++;;
+			i++;
 		else
 			break;
 	}
