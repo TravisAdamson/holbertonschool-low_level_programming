@@ -32,9 +32,9 @@ int _strcmp(char *s1, char *s2)
 	}
 	t = r1 - r2;
 	if (r1 > r2)
-		return (t);
+		return (s1 - s2);
 	else if (r1 < r2)
-		return (t);
+		return (s2 - s1);
 	else
 		return (0);
 }
