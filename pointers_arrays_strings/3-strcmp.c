@@ -31,9 +31,9 @@ int _strcmp(char *s1, char *s2)
 		i++;
 	}
 	t = r1 - r2;
-	if (r1 < r2)
+	if (r1 > r2)
 		return (t);
-	else if (r1 > r2)
+	else if (r1 < r2)
 		return (t);
 	else
 		return (0);
