@@ -13,9 +13,9 @@ int _strcmp(char *s1, char *s2)
 	int n;
 
 	if (s1 > s2)
-		n = s1 - s2;
-	else if (s2 < s1)
 		n = s2 - s1;
+	else if (s1 < s2)
+		n = s1 - s2;
 	else
 		n = 0;
 	return (n);
