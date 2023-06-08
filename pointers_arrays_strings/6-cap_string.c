@@ -14,7 +14,7 @@ char *cap_string(char *str)
 	int l;
 	char t;
 	char d[] = {32, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125, '\t', '\n'};
-	
+
 	i = 0;
 	c = 0;
 	l = 0;
@@ -31,6 +31,8 @@ char *cap_string(char *str)
 			}
 		}
 		if ((c == 1) && (t > 64) && (t < 91))
+			c = 0;
+		if ((c == 1) && (t > 47) && (t < 58))
 			c = 0;
 		if ((c == 1) && (t > 96) && (t < 123))
 		{
