@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * string_toupper - Makes all leters uppercase
+ * *string_toupper - Makes all leters uppercase
  * @str: Pointer to string to be converted
  *
  * Return: Converted string
  */
-char string_toupper(char *str)
+char *string_toupper(char *str)
 {
 	int i;
 	char t;
