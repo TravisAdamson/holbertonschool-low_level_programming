@@ -13,16 +13,16 @@ char *cap_string(char *str)
 	int c;
 	int l;
 	char t;
-	char d[] = {32, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125};
+	char d[] = {32, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125, '\t', '\n'};
 	i = 0;
 	c = 0;
 	l = 0;
 	while (str[i] != '\0')
 	{
 		t = str[i];
-		for (l = 0; l < 11; l++)
+		for (l = 0; l < 13; l++)
 		{
-			if ((t = d[l]) || (t = '\n') || (t = '\t'))
+			if (t == d[l])
 			{
 				c = 1;
 			}
