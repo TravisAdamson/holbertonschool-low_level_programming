@@ -18,14 +18,14 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			*p = s[i];
+			*p = s + i;
 			return (p);
 		}
 		i++;
 	}
 	if (s[i] == c)
 	{
-		*p = s[i];
+		*p = s + i;
 		return (p);
 	}
 	return (NULL);
