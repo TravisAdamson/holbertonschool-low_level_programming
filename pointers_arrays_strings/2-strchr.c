@@ -12,7 +12,8 @@ char *_strchr(char *s, char c)
 {
 	int i;
 	int d;
-	char *p[7000];
+	char p[7000];
+	char *n = p;
 
 	i = 0;
 	d = 0;
@@ -28,10 +29,10 @@ char *_strchr(char *s, char c)
 	if (s[i] == c)
 	{
 		p[i] = s[i];
-		return (p);
+		return (n);
 	}
 	if (d == 1)
-		return (p);
+		return (n);
 	else
 		return (NULL);
 }
