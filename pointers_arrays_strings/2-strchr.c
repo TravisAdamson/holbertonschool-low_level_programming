@@ -11,18 +11,21 @@
 char *_strchr(char *s, char c)
 {
 	int i;
+	int i2;
 	int d;
 	char p[7000];
 	char *n = p;
 
 	i = 0;
+	i2 = 0;
 	d = 0;
 	while (s[i] != '\0')
 	{
 		if ((s[i] == c) || (d == 1))
 		{
-			p[i] = s[i];
+			p[i2] = s[i];
 			d = 1;
+			i2++;
 		}
 		i++;
 	}
