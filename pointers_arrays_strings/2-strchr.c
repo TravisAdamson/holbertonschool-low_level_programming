@@ -18,7 +18,7 @@ char *_strchr(char *s, char c)
 	d = 0;
 	while (s[i] != '\0')
 	{
-		if ((s[i] == c) || (d ==1))
+		if ((s[i] == c) || (d == 1))
 		{
 			p[i] = s[i];
 			d = 1;
@@ -27,8 +27,11 @@ char *_strchr(char *s, char c)
 	}
 	if (s[i] == c)
 	{
-		*p = s[i];
+		p[i] = s[i];
 		return (p);
 	}
-	return (NULL);
+	if (d == 1)
+		return (p);
+	else
+		return (NULL);
 }
