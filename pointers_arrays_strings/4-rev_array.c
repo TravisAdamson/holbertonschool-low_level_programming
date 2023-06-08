@@ -18,14 +18,22 @@ void reverse_array(int *a, int n)
 	l2 = 0;
 	while (l1 < n)
 	{
-		t = a[l1];
+		t = a;
 		l1++;
-		t++;
-	}
-	while (l2 < n)
-	{
-		a[l2] = t;
-		t--;
 		l2++;
+		t++;
+		a++;
+	}
+	while (l1 > 0)
+	{
+		l1--;
+		a--;
+	}
+	while (l1 < n)
+	{
+		a = t;
+		a++;
+		t--;
+		l1++;
 	}
 }
