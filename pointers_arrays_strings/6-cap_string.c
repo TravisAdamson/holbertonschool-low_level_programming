@@ -21,6 +21,8 @@ char *cap_string(char *str)
 	while (str[i] != '\0')
 	{
 		t = str[i];
+		if (i = 0)
+			c = 1;
 		for (l = 0; l < 13; l++)
 		{
 			if (t == d[l])
@@ -28,6 +30,8 @@ char *cap_string(char *str)
 				c = 1;
 			}
 		}
+		if ((c == 1) && (t > 64) && (t < 91))
+			c = 0;
 		if ((c == 1) && (t > 96) && (t < 123))
 		{
 			str[i] = (t - 32);
