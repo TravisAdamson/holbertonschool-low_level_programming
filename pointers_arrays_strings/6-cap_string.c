@@ -11,11 +11,13 @@ char *cap_string(char *str)
 {
 	int i;
 	int c;
+	int l;
 	char t;
-	char d[] = "32,33,34,40,41,44,46,59,63,123,125"
+	char d[11] = "32,33,34,40,41,44,46,59,63,123,125";
 
 	i = 0;
 	c = 0;
+	l = 0;
 	while (str[i] != '\0')
 	{
 		t = str[i];
