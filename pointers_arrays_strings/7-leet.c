@@ -21,8 +21,8 @@ char *leet(char *str)
 	{
 		for (i = 0; i < 5; i++)
 		{
-			if ((str[i] = d[i]) || (str[i] = d2[i]))
-				str[i] = r[i];
+			if ((str[i2] = d[i]) || (str[i] = d2[i]))
+				str[i2] = r[i];
 		}
 		i2++;
 	}
