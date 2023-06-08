@@ -12,7 +12,7 @@ char *_strchr(char *s, char c)
 {
 	int i;
 	int i2;
-	char **p = 0;
+	char *p = 0;
 
 	i = 0;
 	i2 = 0;
@@ -20,18 +20,14 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			for(i2 = 0; i2 < i; i2++)
-				s++;
-			*p = &s;
+			p = s[i];
 			return (p);
 		}
 		i++;
 	}
 	if (s[i] == c)
 	{
-		for (i2 = 0; i2 < i; i2++)
-			s++;
-		*p = &s;
+		*p = s[i];
 		return (p);
 	}
 	return (NULL);
