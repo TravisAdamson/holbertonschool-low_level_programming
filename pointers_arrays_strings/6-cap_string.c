@@ -13,7 +13,7 @@ char *cap_string(char *str)
 	int c;
 	int l;
 	char t;
-	char d[11] = {32, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125};
+	char d[] = {32, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125};
 	i = 0;
 	c = 0;
 	l = 0;
@@ -22,10 +22,9 @@ char *cap_string(char *str)
 		t = str[i];
 		for (l = 0; l < 11; l++)
 		{
-			if ((t == d[l]) || (t = '\n') || (t = '\t'))
+			if ((t = d[l]) || (t = '\n') || (t = '\t'))
 			{
 				c = 1;
-				l = 11;
 			}
 		}
 		if ((c = 1) && (t > 96) && (t < 123))
