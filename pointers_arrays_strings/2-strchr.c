@@ -22,7 +22,7 @@ char *_strchr(char *s, char c)
 		{
 			for(i2 = 0; i2 < i; i2++)
 				s++;
-			*p = s;
+			*p = *s;
 			return (p);
 		}
 		i++;
@@ -31,7 +31,7 @@ char *_strchr(char *s, char c)
 	{
 		for (i2 = 0; i2 < i; i2++)
 			s++;
-		*p = s;
+		*p = *s;
 		return (p);
 	}
 	return (NULL);
