@@ -31,14 +31,14 @@ unsigned int _strspn(char *s, char *accept)
 			}
 			i2++;
 		}
-		if (c == 0)
-			return (r);
-		else
+		if (c != 0)
 		{
 			i++;
 			i2 = 0;
 			c = 0;
 		}
+		else
+			return (r);
 	}
 	return (r);
 }
