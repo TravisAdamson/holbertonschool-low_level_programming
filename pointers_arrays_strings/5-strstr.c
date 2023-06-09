@@ -31,7 +31,10 @@ char *_strstr(char *haystack, char *needle)
 				break;
 		}
 		else
+		{
+			m = 0;
 			i++;
+		}
 	}
 	if (m != 0)
 		return (&haystack[m]);
