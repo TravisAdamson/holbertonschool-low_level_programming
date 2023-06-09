@@ -8,7 +8,7 @@
  *
  * Return: Length of the prefix substring
  */
-unsigned int _strncpy(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	int i;
 	int i2;
