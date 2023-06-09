@@ -20,5 +20,6 @@ void print_chessboard(char (*a)[8])
 		{
 			_putchar(a[i2][i]);
 		}
+		_putchar('\n');
 	}
 }
