@@ -23,7 +23,8 @@ char *_strstr(char *haystack, char *needle)
 		{
 			i2++;
 			i++;
-			m = i;
+			if (m == 0)
+				m = i;
 			if (needle[i2] == '\0')
 				break;
 		}
