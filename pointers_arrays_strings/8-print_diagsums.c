@@ -13,7 +13,7 @@ void print_diagsums(int *a, int size)
 	int t1;
 	int t2;
 	int i;
-	int *p = a;
+	int *p[][] = a;
 
 	t1 = 0;
 	t2 = 0;
