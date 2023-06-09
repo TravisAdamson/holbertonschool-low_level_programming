@@ -24,7 +24,7 @@ char *_strstr(char *haystack, char *needle)
 		if (haystack[i] == needle[i2])
 		{
 			if (m == 0)
-				m = i;
+				m = i - 1;
 			i2++;
 			i++;
 			if (needle[i2] == '\0')
