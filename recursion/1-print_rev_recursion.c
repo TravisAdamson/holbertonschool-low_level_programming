@@ -7,24 +7,14 @@
  *
  * Return: No Return
  */
-void _print_rev_recursion(char *s, int i)
+void _print_rev_recursion(char *s)
 {
-	int g;
-	int *i = g;
-
-	i = 0;
-	g = 0;
-	if ((*s != '\0') && (i != 0))
+	if ((*s != '\0')
 	{
 		_putchar(*s);
-		s--;
-		_print_rev_recursion(s, i);
+		-- s;
+		_print_rev_recursion(s);
 	}
 	else
-	{
-		s++;
-		if (*s == '\0')
-			i = 1;
-		_print_rev_recursion(s, i);
-	}
+		_putchar('\n');
 }

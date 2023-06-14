@@ -3,6 +3,6 @@
 
 int _putchar(char);
 void _puts_recursion(char *s);
-void _pride_rev_recursion(char *s, int *i);
+void _print_rev_recursion(char *s);
 
 #endif /* MAIN_H */
