@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursion - Uses recursion to get sqrt of n
  * calc - determine sqrt
  * @n: Number to calculate
  * @endval: Result
@@ -24,9 +23,15 @@ int calc(int n, int endval)
 		return (calc(n, endval + 1));
 }
 
+/**
+ * _sqrt_recursion - Uses recursion to get sqrt of n
+ * @n: Number to calculate
+ *
+ * Return: Result
+ */
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return (calc(n,0));
+	return (calc(n, 0));
 }
