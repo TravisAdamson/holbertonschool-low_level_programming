@@ -15,11 +15,11 @@ int calc(int n, int div)
 	{
 		return (1);
 	}
-	if (n % d)
+	if (n % div)
 	{
 		return (0);
 	}
-	return (calc(n, d - 1));
+	return (calc(n, div - 1));
 }
 
 /**
