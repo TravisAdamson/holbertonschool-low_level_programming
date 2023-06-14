@@ -16,4 +16,5 @@ int factorial(int n)
 		if (n != 0)
 			return (factorial(n / 2));
 	}
+	return (0);
 }
