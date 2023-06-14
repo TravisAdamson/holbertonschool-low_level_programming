@@ -24,4 +24,5 @@ void _print_rev_recursion(char *s)
 		if (*s == '\0')
 			i = 1;
 		_print_rev_recursion(s);
+	}
 }
