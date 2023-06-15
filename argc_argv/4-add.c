@@ -18,10 +18,12 @@ int main(int argc, char *argv[])
 	t = 0;
 	for (i = 0; i < argc; i++)
 	{
-		if (isdigit(argv[i]))
+		if (isdigit(argv[i]) != 0)
+		{
 			t = t + atoi(argv[i]);
-	
-		if ((t > 0) && (i == argc - 1))
+			m = 1;
+		}
+		if ((t > 0) && (m = 1))
 		{
 			printf("Error\n");
 			return (1);
