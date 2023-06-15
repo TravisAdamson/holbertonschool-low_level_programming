@@ -14,17 +14,20 @@ int main(int argc, char *argv[])
 {
 	int i;
 	int t;
+	int i2;
 
 	t = 0;
-	for (i = 0; i < argc; i++)
-	{
-		if (atoi(argv[i]))
-			t = t + atoi(argv[i]);
-		else
+	if (argc < 1)
+		return (0);
+	for (i2 = 0; i2 < argc; i2++)
+		if (atoi(argv[i2]) == 0)
 		{
 			printf("Error\n");
 			return (1);
 		}
+	for (i = 0; i < argc; i++)
+	{
+			t = t + atoi(argv[i]);
 	}
 	if (t == 0)
 		return (0);
