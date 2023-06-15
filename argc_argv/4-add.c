@@ -15,8 +15,8 @@ int main(int argc, char *argv[])
 	int i;
 	int t;
 	int i2;
+	int i3;
 	char *e;
-	int len;
 
 	t = 0;
 	if (argc < 1)
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	for (i2 = 1; i2 < agrc; i2++)
+	for (i2 = 1; i2 < argc; i2++)
 	{
 		e = argv[i2];
 		for (i3 = 0; e[i3] != '\0'; i3++)
