@@ -14,8 +14,10 @@ int main(int argc, char *argv[])
 {
 	int i;
 	int t;
+	int m;
 
 	t = 0;
+	m = 0;
 	for (i = 0; i < argc; i++)
 	{
 		if (isdigit(argv[i]) != 0)
