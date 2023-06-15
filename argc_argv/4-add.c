@@ -19,10 +19,6 @@ int main(int argc, char *argv[])
 	for (i = 0; i < argc; i++)
 	{
 		printf("Testing");
-		if (isdigit(argv[i]) > 0)
-		{
-			t = t + atoi(argv[i]);
-		}
 	}
 	if (t == 0)
 		return (0);
