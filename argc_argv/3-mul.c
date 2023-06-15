@@ -19,8 +19,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	n = (argv[1] + 48);
-	n2 = (argv[2] + 48);
+	n = (int)argv[1];
+	n2 = (int)argv[2];
 	t = n * n2;
 	printf("%d\n", t);
 	return (0);
