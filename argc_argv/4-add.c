@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 	}
 	for (i = 0; i < argc; i++)
 	{
-			t = t + atoi(argv[i]);
+		t = t + atoi(argv[i]);
 	}
 	if (t == 0)
 	{
