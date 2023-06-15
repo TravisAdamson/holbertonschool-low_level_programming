@@ -6,7 +6,7 @@
  *
  * Return: No Return
  */
-int main(void)
+int main(int argc, char *argv)
 {
-	printf("%d\n", argc[0]);
+	printf("%d\n", argv[0]);
 }
