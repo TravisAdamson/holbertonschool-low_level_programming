@@ -19,7 +19,6 @@ int main(int argc, char *argv[])
 	for (i = 0; i < argc; i++)
 	{
 		t = t + atoi(argv[i]);
-		printf("%d\n", t);
 	}
 	if (t == 0)
 		return (0);
