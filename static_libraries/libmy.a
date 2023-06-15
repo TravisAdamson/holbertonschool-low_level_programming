@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 /**
- * _isupper - checks if a character is upper case
+ * _isupper - dchecks if a character is upper case
  * @c: character to be compared
  *
  * Return: Returns a true or false value
