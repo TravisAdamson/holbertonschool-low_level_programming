@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		e = argv[i2];
 		for (i3 = 0; e[i3] != '\0'; i3++)
 		{
-		 	if ((e[i3] < 48) && (e[i3] > 57))
+			if ((e[i3] < 48) || (e[i3] > 57))
 			{
 				printf("Error\n");
 				return (1);
