@@ -4,9 +4,10 @@
 /**
  * main - Prints the program name
  *
- * Return: No Return
+ * Return: Always Return 0
  */
-int main(int argc, char *argv)
+int main(char **argv)
 {
 	printf("%d\n", argv[0]);
+	return (0);
 }
