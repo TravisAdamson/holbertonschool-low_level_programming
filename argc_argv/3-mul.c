@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Prints the program name
@@ -10,17 +11,17 @@
  */
 int main(int argc, char *argv[])
 {
-	unsigned int n;
-	unsigned int n2;
-	unsigned int t;
+	int n;
+	int n2;
+	int t;
 
 	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	n = (unsigned int)argv[1];
-	n2 = (unsigned int)argv[2];
+	n = atoi(argv[1]);
+	n2 = atoi(argv[2]);
 	t = n * n2;
 	printf("%d\n", t);
 	return (0);
