@@ -21,15 +21,10 @@ int main(int argc, char *argv[])
 	for (i = 0; i < argc; i++)
 	{
 		printf("Testing");
-		if (isdigit(argv[i]) != 0)
+		if (isdigit(argv[i]) > 0)
 		{
 			t = t + atoi(argv[i]);
 			m = 1;
-		}
-		if ((t > 0) && (m = 1))
-		{
-			printf("Error\n");
-			return (1);
 		}
 	}
 	if (t == 0)
