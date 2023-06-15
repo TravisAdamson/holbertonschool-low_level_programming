@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	t = 0;
 	for (i = 0; i < argc; i++)
 	{
-		printf("Testing");
+		printf("%s\n", argv[i]);
 	}
 	if (t == 0)
 		return (0);
