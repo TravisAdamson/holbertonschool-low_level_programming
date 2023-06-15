@@ -15,6 +15,8 @@ int main(int argc, char *argv[])
 	int i;
 	int t;
 	int i2;
+	char *e;
+	int len;
 
 	t = 0;
 	if (argc < 1)
@@ -22,12 +24,18 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	for (i2 = 1; i2 < argc; i2++)
-		if (atoi(argv[i2] != argv[i2]))
+	for (i2 = 1; i2 < agrc; i2++)
+	{
+		e = argv[i2];
+		for (i3 = 0; e[i3] != '\0'; i3++)
 		{
-			printf("Error\n");
-			return (1);
+		 	if ((e[i3] < 48) && (e[i3] > 57))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
+	}
 	for (i = 0; i < argc; i++)
 	{
 			t = t + atoi(argv[i]);
