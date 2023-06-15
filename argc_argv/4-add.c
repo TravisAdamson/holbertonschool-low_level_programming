@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
 	m = 0;
 	for (i = 0; i < argc; i++)
 	{
+		printf("Testing");
 		if (isdigit(argv[i]) != 0)
 		{
 			t = t + atoi(argv[i]);
