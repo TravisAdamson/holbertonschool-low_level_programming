@@ -18,8 +18,11 @@ int main(int argc, char *argv[])
 
 	t = 0;
 	if (argc < 1)
+	{
+		printf("0\n");
 		return (0);
-	for (i2 = 0; i2 < argc; i2++)
+	}
+	for (i2 = 1; i2 < argc; i2++)
 		if (atoi(argv[i2]) == 0)
 		{
 			printf("Error\n");
@@ -30,7 +33,10 @@ int main(int argc, char *argv[])
 			t = t + atoi(argv[i]);
 	}
 	if (t == 0)
+	{
+		printf("0\n");
 		return (0);
+	}
 	printf("%d\n", t);
 	return (0);
 }
