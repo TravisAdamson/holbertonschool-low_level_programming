@@ -13,6 +13,7 @@
 int main(int argc, char **argv)
 {
 	int s = 0;
+	int t = 0;
 
 	if (argc == 2)
 	{
@@ -22,7 +23,9 @@ int main(int argc, char **argv)
 			printf("0\n");
 			return (0);
 		}
-		return (reduce_to_cents(s));
+		t = reduce_to_cents(s);
+		printf("%d\n", t);
+		return (t)
 	}
 	else
 	{
