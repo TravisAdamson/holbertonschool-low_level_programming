@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 			printf("0\n");
 			return (0);
 		}
-		t = reduce_to_cents(s);
+		t = smarter_cents(s);
 		printf("%d\n", t);
 		return (t);
 	}
@@ -59,4 +59,38 @@ int reduce_to_cents(int s)
 		return (1 + reduce_to_cents(s - 1));
 	else
 		return (0);
+}
+/**
+ * smarter_cents - Calculates the minimum number of coins
+ * @s: The value to be examined
+ *
+ * Return: The minimum number of coins
+ */
+
+int smarter_cents(int s)
+{
+	int t = 0;
+
+	if (s >= 25)
+	{
+		t = s / 25;
+                return (t + reduce_to_cents(s - (25 * t)));
+	}
+        else if (s >= 10)
+	{
+		t = s / 10;
+                return (t + reduce_to_cents(s - (10 * t)));
+	}
+        else if (s >= 5)
+	{
+		t = s / 5;
+                return (t + reduce_to_cents(s - (5 * t)));
+	}
+        else if (s >= 2)
+	{
+		t = s / 2;
+                return (t + reduce_to_cents(s - (2 * t)));
+	}
+        else
+                return (s);
 }
