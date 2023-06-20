@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 		}
 		t = reduce_to_cents(s);
 		printf("%d\n", t);
-		return (t)
+		return (t);
 	}
 	else
 	{
