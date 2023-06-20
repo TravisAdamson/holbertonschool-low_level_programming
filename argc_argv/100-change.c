@@ -74,23 +74,23 @@ int smarter_cents(int s)
 	if (s >= 25)
 	{
 		t = s / 25;
-                return (t + reduce_to_cents(s - (25 * t)));
+		return (t + reduce_to_cents(s - (25 * t)));
 	}
-        else if (s >= 10)
+	else if (s >= 10)
 	{
 		t = s / 10;
-                return (t + reduce_to_cents(s - (10 * t)));
+		return (t + reduce_to_cents(s - (10 * t)));
 	}
-        else if (s >= 5)
+	else if (s >= 5)
 	{
 		t = s / 5;
-                return (t + reduce_to_cents(s - (5 * t)));
+		return (t + reduce_to_cents(s - (5 * t)));
 	}
-        else if (s >= 2)
+	else if (s >= 2)
 	{
 		t = s / 2;
-                return (t + reduce_to_cents(s - (2 * t)));
+		return (t + reduce_to_cents(s - (2 * t)));
 	}
-        else
-                return (s);
+	else
+		return (s);
 }
