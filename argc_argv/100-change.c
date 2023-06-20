@@ -10,7 +10,7 @@
  *
  * Return: The minimum number of coins
  */
-int change(int argc, char **argv)
+int main(int argc, char **argv)
 {
 	int s = 0;
 	int t = 0;
