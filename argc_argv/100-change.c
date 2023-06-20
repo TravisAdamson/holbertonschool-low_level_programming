@@ -46,13 +46,13 @@ int reduce_to_cents(int s)
 	int n = 5;
 	int p = 1;
 
-	if (s > q)
+	if (s => q)
 		return (1 + reduce_to_cents(s - 25));
-	else if (s > d)
+	else if (s => d)
 		return (1 + reduce_to_cents(s - 10));
-	else if (s > n)
+	else if (s => n)
 		return (1 + reduce_to_cents(s - 5));
-	else if (s > p)
+	else if (s => p)
 		return (1 + reduce_to_cents(s - 1));
 	else
 		return (0);
