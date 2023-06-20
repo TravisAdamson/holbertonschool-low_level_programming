@@ -17,6 +17,7 @@ int main(int argc, char **argv)
 	if (argc == 2)
 	{
 		s = atoi(argv[1]);
+		printf("%d\n", s);
 		if (s < 0)
 		{
 			printf("0\n");
@@ -44,13 +45,13 @@ int reduce_to_cents(int s)
 	int p = 1;
 
 	if (s > q)
-		return ( 1 + reduce_to_cents(s - 25));
+		return (1 + reduce_to_cents(s - 25));
 	else if (s > d)
-		return ( 1 + reduce_to_cents(s - 10));
+		return (1 + reduce_to_cents(s - 10));
 	else if (s > n)
-		return ( 1 + reduce_to_cents(s - 5));
+		return (1 + reduce_to_cents(s - 5));
 	else if (s > p)
-		return ( 1 + reduce_to_cents(s - 1));
+		return (1 + reduce_to_cents(s - 1));
 	else
 		return (0);
 }
