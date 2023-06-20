@@ -25,14 +25,13 @@ int main(int argc, char **argv)
 		}
 		t = smarter_cents(s);
 		printf("%d\n", t);
-		return (t);
+		return (0);
 	}
 	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-	return (0);
 }
 /**
  * reduce_to_cents - Calculates the minimum number of coins
