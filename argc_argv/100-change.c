@@ -17,13 +17,11 @@ int main(int argc, char **argv)
 	if (argc == 2)
 	{
 		s = atoi(argv[1]);
-		if (s < 0)
+		if (s <= 0)
 		{
 			printf("0\n");
 			return (0);
 		}
-		if (s == 0)
-			return (0);
 		return (reduce_to_cents(s));
 	}
 	else
