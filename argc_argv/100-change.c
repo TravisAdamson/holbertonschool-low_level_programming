@@ -18,7 +18,7 @@ int reduce_to_cents(int argc, char *argv[])
 	int p = 1;
 	int s = 0;
 
-	if (argc == 1))
+	if (argc == 1)
 	{
 		s = atoi(argv[1]);
 		if (s < 0)
