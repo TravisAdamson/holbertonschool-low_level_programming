@@ -42,7 +42,6 @@ int reduce_to_cents(int s)
 	int d = 10;
 	int n = 5;
 	int p = 1;
-	int s = 0;
 
 	if (s > q)
 		return ( 1 + reduce_to_cents(s - 25));
