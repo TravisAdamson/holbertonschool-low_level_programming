@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 	else
 		l2 = strlen(s2) + 1;
 	tl = l1 + l2;
-	if (tl <= 0)
+	if (tl >= 0)
 	{
 		point = (char *) malloc(tl * sizeof(char));
 		if (point != NULL)
