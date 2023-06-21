@@ -15,7 +15,7 @@ int **alloc_grid(int width, int height)
 	int **point;
 	int i;
 	int i2;
-	char *a;
+	int *a;
 
 	i = 0;
 	i2 = 0;
