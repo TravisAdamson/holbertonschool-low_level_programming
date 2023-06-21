@@ -15,7 +15,7 @@ char *_strdup(char *str)
 	int length;
 
 	i = 0;
-	length = sizeof(*str);
+	length = sizeof(*str) + 1;
 	if (length != 0)
 	{
 		point = (char *) malloc(length * sizeof(char));
@@ -23,7 +23,7 @@ char *_strdup(char *str)
 		{
 			for (i = 0; i < length; i++)
 				point[i] = str[i];
-			return (&*point);
+			return (&point);
 		}
 		else
 			return (NULL);
