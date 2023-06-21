@@ -11,7 +11,7 @@
 char *_strdup(char *str)
 {
 	char *point;
-	unsigned int i;
+	int i;
 	int length;
 
 	i = 0;
