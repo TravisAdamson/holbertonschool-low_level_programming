@@ -20,9 +20,10 @@ int **alloc_grid(int width, int height)
 	i2 = 0;
 	if ((width <= 0) || (height <= 0))
 		return (NULL);
+	point = malloc(height * sizeof(int *));
 	for (i = 0; i < height; i++)
 	{
-		point[*i] = (int *) malloc(width * sizeof(int));
+		point[i] = (int *) malloc(width * sizeof(int));
 		if (point[i] == NULL)
 			return (NULL);
 	}
