@@ -35,12 +35,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 		size2 = n;
 	tsize = size1 + size2 + 1;
+	printf("%d, %d, %d, %d\n", size1, size2, n, tsize);
 	point = (char *) malloc(tsize * sizeof(char));
 	if (point != NULL)
 	{
-		for(i = 0; i < size1; i++)
+		for( i = 0; i < size1; i++)
 			point[i] = s1[i];
-		for(i2 = 0; i2 < size2; i2++)
+		for( i2 = 0; i2 < size2; i2++)
 			point[i2] = point[i2 - size2];
 		point[i2] = '\0';
 		return (point);
