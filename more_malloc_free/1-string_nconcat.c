@@ -17,10 +17,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i;
 	unsigned int i2;
 	unsigned int nc;
+	unsigned int length;
 
 	i = 0;
 	i2 = 0;
 	nc = n;
+	length = 0;
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
@@ -30,14 +32,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	point = malloc((nc + 1) * sizeof(char));
 	if (point != NULL)
 	{
-		for(i = 0; s1[i]; i++)
-			point[i] = s1[i];
-		for(i2 = 0; s2[i] && i2 < n; i2++)
-		{
-			point[i] = s2[i2];
-			i++;
-		}
-		point[i] = '\0';
+		for (i = 0; s1[i]; i++)
+			point[length++] = s1[i];
+		for (i2 = 0; s2[i] && i2 < n; i2++)
+			point[length++] = s2[i2];
+		point[length] = '\0';
 		return (point);
 	}
 	else
