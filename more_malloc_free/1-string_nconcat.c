@@ -22,7 +22,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	i = 0;
 	i2 = 0;
-	printf("%c, %c\n", s1, s2);
+	printf("%p, %p\n", s1, s2);
 	if (s1 != NULL)
 		size1 = strlen(s1);
 	else
