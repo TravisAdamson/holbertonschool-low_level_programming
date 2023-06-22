@@ -10,7 +10,7 @@
  *
  * Return: Pointer to new memmory location
  */
-char *_caloc(unsigned int nmemb, unsigned int size)
+char *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *point;
 
