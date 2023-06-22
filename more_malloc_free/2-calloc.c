@@ -13,7 +13,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *point;
-	int i;
+	unsigned int i;
 	char *insidep;
 
 	i = 0;
