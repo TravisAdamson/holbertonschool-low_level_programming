@@ -16,7 +16,7 @@ char *_caloc(unsigned int nmemb, unsigned int size)
 
 	if ((nmemb == 0) || (size = 0))
 		return (NULL);
-	point = malloc(nmemb, size);
+	point = malloc(nmemb * size);
 	if (point == NULL)
 		return (NULL);
 	return (point);
