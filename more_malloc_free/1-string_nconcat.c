@@ -23,11 +23,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	i = 0;
 	i2 = 0;
 	if (s1 != NULL)
-		size1 = strlen(s1);
+		size1 = strlen(*s1);
 	else
 		size1 = 0;
 	if (s2 != NULL)
-		size2 = strlen(s2);
+		size2 = strlen(*s2);
 	else
 		size2 = 0;
 	if (n >= size2)
