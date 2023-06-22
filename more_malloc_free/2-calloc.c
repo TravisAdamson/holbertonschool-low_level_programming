@@ -25,5 +25,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	insidep = point;
 	for (i = 0; i < (size * nmemb); i++)
 		insidep[i] = 0;
-	return (point);
+	return (insidep);
 }
