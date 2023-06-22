@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * *string_nconcat - Makes space fo s1 + n bytes of s2
@@ -41,7 +42,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			point[i] = s1[i];
 		for(i2 = 0; i2 < size2; i2++)
 			point[i2] = point[i2 - size2];
-		point[i2] = "\0";
+		point[i2] = '\0';
 		return (point);
 	}
 	else
