@@ -36,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 		nc = n;
 	tsize = size1 + nc + 1;
-	point = (char *) malloc(tsize * sizeof(char));
+	point = malloc(tsize * sizeof(char));
 	if (point != NULL)
 	{
 		for( i = 0; i < size1; i++)
