@@ -11,7 +11,7 @@
 void *malloc_checked(unsigned int b)
 {
 	unsigned int *point;
-	
+
 	point = malloc(b);
 	if (point != NULL)
 	{
