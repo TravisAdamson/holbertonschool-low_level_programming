@@ -14,6 +14,7 @@ int *array_range(int min, int max)
 {
 	int nia;
 	int *a;
+	int i;
 
 	if (min > max)
 		return (NULL);
