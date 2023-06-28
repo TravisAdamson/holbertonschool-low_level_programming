@@ -16,7 +16,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int l2;
 	char *n2 = name;
 	char *o2 = owner;
-	int i;
 	dog_t *tdog;
 	
 	l1 = 0;
