@@ -1,22 +1,20 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "dog.h"
 
 /**
- * *malloc_checked - Allocates memmory using malloc
- * @b: Size of memmory block needed
+ * init_dog - Creates a new variable struct dog
+ * @d: The dog being created
+ * @name: The dogs name
+ * @age: The dogs age
+ * @owner: The dogs owner
  *
- * Return: Pointer to new memmory location
+ * Return: No Return
  */
-void *malloc_checked(unsigned int b)
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	unsigned int *point;
-
-	point = malloc(b);
-	if (point != NULL)
-	{
-		return (point);
-	}
-	else
-		exit(98);
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 }
