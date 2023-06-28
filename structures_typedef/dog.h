@@ -10,7 +10,7 @@
  * description - Holds the three pieces of data on the dog
  */
 
-typedef struct dog 
+typedef struct dog
 {
 	char *name;
 	float age;
