@@ -26,30 +26,22 @@ dog_t *new_dog(char *name, float age, char *owner)
 		if (name[l1] != '\0')
 			l1++;
 		else
-			continue;
+			break;
 	}
 	for (i = 0; owner[l2]; i++)
 	{
 		if (name[l2] != '\0')
 			l2++;
 		else
-			continue;
+			break;
 	}
 	n2 = malloc(l1);
-	if (n2 == NULL)
-	{
-		free(n2);
-		return (NULL);
-	}
 	o2 = malloc(l2);
-	if (o2 == NULL)
-	{
-		free(n2);
-		return (NULL);
-	}
 	tdog = malloc(sizeof(dog_t));
-	if (tdog == NULL)
+	if ((tdog == NULL) || (o2 == NULL) || (n2 == NULL))
 	{
+		free(o2);
+		free(n2);
 		free(tdog);
 		return (NULL);
 	}
