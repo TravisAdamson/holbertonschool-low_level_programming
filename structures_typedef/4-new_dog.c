@@ -3,10 +3,12 @@
 #include "dog.h"
 
 /**
- * print_dog - prints the given struct dog
- * @d: The dog being printed
+ * new_dog - Creates a new dog
+ * @name: New dogs name
+ * @age: New dogs age
+ * @owner: New dogs owner
  *
- * Return: No Return
+ * Return: Returns the new dog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -42,6 +44,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		free(tempdog->name);
 		free(tempdog->owner);
+		free(tempdog->age);
 		free(tempdog);
 		return (NULL);
 	}
