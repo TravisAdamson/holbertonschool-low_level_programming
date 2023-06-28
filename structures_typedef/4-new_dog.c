@@ -12,6 +12,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	int l1;
 	int l2;
+	int i;
 	dog_t *tempdog;
 
 	l1 = 0;
@@ -34,7 +35,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	for (i = 0; i < l1; i++)
 		tempdog->name[i] = name[i];
-	dog->age = age;
+	tempdog->age = age;
 	tempdog->owner = malloc(l2 * sizeof(dog_t->owner));
 	if (tempdog == NULL)
 	{
