@@ -30,7 +30,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	for (i = 0; owner[l2]; i++)
 	{
-		if (name[l2] != '\0')
+		if (owner[l2] != '\0')
 			l2++;
 		else
 			break;
