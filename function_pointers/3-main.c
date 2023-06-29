@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
+#include "3-op_functions.c"
 
 /**
  * main - Run a function on numbers
