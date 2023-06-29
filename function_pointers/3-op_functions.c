@@ -1,3 +1,5 @@
+#include "3-calc.h"
+
 /**
  * op_add - Add given ints
  * @a: First int

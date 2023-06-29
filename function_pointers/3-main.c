@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "3-op_functions.c"
-#include "3-get_op_func.c"
 #include "3-calc.h"
 
 /**
@@ -9,7 +7,7 @@
  * 
  * Return: 0 on success, exit code indicating the issue
  */
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
 	int a;
 	int b;

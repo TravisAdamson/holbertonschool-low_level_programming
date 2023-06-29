@@ -1,3 +1,5 @@
+#include "3-calc.h"
+
 /**
  * get_op_func - Find which function to use
  * @s: Indicator for what function to use
