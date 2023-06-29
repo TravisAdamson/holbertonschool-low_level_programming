@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "function_pointers.h"
-
 /**
  * op_add - Add given ints
  * @a: First int
