@@ -11,11 +11,10 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	int total;
-	int i;
-
-	total = 0;
+	int total = 0;
+	unsigned int i;
 	va_list lst;
+
 	va_start(lst, n);
 	if (n == 0)
 		return (0);
