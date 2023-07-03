@@ -31,7 +31,7 @@ void print_int(va_list i)
  *
  * Return: No Return
  */
-void print_float(va_list d)
+void print_float(va_list f)
 {
 	printf("%f", va_arg(f, float));
 }
@@ -64,7 +64,7 @@ void print_all(const char * const format, ...)
 	int i2;
 	char *s;
 	va_list lst;
-	true_Form valid[] = {
+	true_form valid[] = {
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
