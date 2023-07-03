@@ -72,15 +72,15 @@ void print_all(const char * const format, ...)
 	};	
 
 	i = 0;
-	j = 0;
+	i2 = 0;
 	s = "";
 	va_start(lst, format);
-	while ((format) && (format[i]))
+	while (format && format[i])
 	{
 		i2 = 0;
 		while (i2 < 4)
 		{
-			if (format[i] = valid[i2].use)
+			if (format[i] == *valid[i2].use)
 			{
 				printf("%s", s);
 				valid[i2].f(lst);
