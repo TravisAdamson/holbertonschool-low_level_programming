@@ -27,7 +27,7 @@ void print_int(va_list i)
 
 /**
  * print_float - Prints the double given
- * @d: Double to be printed
+ * @f: Float to be printed
  *
  * Return: No Return
  */
@@ -69,7 +69,7 @@ void print_all(const char * const format, ...)
 		{"i", print_int},
 		{"f", print_float},
 		{"s", print_str}
-	};	
+	};
 
 	i = 0;
 	i2 = 0;
