@@ -2,7 +2,10 @@
 #define LISTS_H
 
 /**
- * list_s - Singly linked list
+ * struct list_s - Singly linked list
+ * @str: The string to be printed in list
+ * @len: The length of the string
+ * Description: A singly linked list
  */
 typedef struct list_s
 {
