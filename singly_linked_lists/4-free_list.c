@@ -5,15 +5,15 @@
 
 /**
  * free_list - Free the elements of the given list
- * @h: The list to be freed
+ * @head: The list to be freed
  *
  * Return: No Return
  */
-void free_list(const list_t *h)
+void free_list(list_t *head)
 {
-	if (h == null)
+	if (head == null)
 		return;
-	free_list(h->next
-	free(h->str);
-	free(h);
+	free_list(head->next);
+	free(head->str);
+	free(head);
 }
