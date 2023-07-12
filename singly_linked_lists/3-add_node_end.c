@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_node - Adds new nodes
+ * add_node_end - Adds new nodes
  * @head: The previous list_t
  * @str: Value to be added to new list_t
  *
@@ -14,7 +14,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	int i, length;
 	char *newvalue;
-	list_t *new, *current;;
+	list_t *new, *current;
 
 	length = 0;
 	if (str == NULL)
