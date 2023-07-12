@@ -14,7 +14,7 @@ list_t *add_node(list_t **head, const char *str)
 {
 	int i, length;
 	char *newvalue;
-	list_t new;
+	list_t *new;
 
 	length = 0;
 	if ((str == NULL) || (head == NULL))
