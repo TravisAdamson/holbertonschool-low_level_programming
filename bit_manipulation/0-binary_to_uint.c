@@ -12,10 +12,15 @@
 
 unsigned int str_to_int(char a)
 {
+	unsigned int i = 0;
+
 	if (a == 0)
-		return ((unsigned int) '0');
+		return (i);
 	else
-		return ((unsigned int) '1');
+	{
+		i = 1;
+		return (i);
+	}
 }
 /**
  * binary_to_uint - Converts a string of 0 and 1s to a uint
