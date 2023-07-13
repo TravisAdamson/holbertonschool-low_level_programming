@@ -4,8 +4,8 @@
 #include "main.h"
 
 /**
- * binary_to_uint - Converts a string of 0 and 1s to a uint
- * @b: the string to convert
+ * str_to_int - Converts a char from string to unsigned int
+ * @a: the char to convert
  *
  * Return: The unsigned int after conversion
  */
@@ -35,7 +35,7 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	for (i = 0; b; i++)
 		length++;
-	for (i = length - 1; b[i]; i--, svalue *=2)
+	for (i = length; b[i]; i--, svalue *=2)
 	{
 		if (b[i] != 1 && b[i] != 0)
 			return (0);
