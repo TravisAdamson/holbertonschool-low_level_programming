@@ -12,15 +12,9 @@
 
 unsigned int str_to_int(char a)
 {
-	unsigned int i = 0;
-
-	if (a == 0)
-		return (i);
-	else
-	{
-		i = 1;
-		return (i);
-	}
+	if (a == '0')
+		return (0);
+	return (1);
 }
 /**
  * binary_to_uint - Converts a string of 0 and 1s to a uint
@@ -48,7 +42,8 @@ unsigned int binary_to_uint(const char *b)
 		if ((b[i] != 1) && (b[i] != 0))
 			return (0);
 		tempv = str_to_int(b[i]);
-		total += tempv * svalue;
+		if (tempv != 0)
+			total = total + (tempv * svalue);
 	}
 	return (total);
 }
