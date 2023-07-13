@@ -18,7 +18,7 @@ unsigned int binary_to_uint(const char *b)
 
 	svalue = 1;
 	i = 0;
-	total = 1;
+	total = 0;
 	if (b == NULL)
 		return (0);
 	while (b[i] != '\0')
