@@ -20,7 +20,7 @@ unsigned int binary_to_uint(const char *b)
 	svalue = 1;
 	g = 0;
 	i = 0;
-	total = 0;
+	total = 1;
 	if (b == NULL)
 		return (0);
 	while (b[i] != '\0')
@@ -36,15 +36,9 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else if (tempc == '1')
 		{
-			if (g != 0)
-			{
-				total += svalue;
-				svalue *= 2;
-				i--;
-				g = 10;
-			}
-			else
-				total++;
+			total += svalue;
+			svalue *= 2;
+			i--;
 		}
 		else
 			return (0);
