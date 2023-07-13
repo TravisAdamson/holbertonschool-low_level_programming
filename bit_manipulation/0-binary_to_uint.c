@@ -36,7 +36,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else if (tempc == '1')
 		{
-			if (g = 0)
+			if (g != 0)
 			{
 				total += svalue;
 				svalue *= 2;
