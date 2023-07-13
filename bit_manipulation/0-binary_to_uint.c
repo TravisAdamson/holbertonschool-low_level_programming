@@ -12,11 +12,13 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int i;
+	int g;
 	unsigned int total;
 	unsigned int svalue;
 	char tempc = 0;
 
 	svalue = 1;
+	g = 0;
 	i = 0;
 	total = 0;
 	if (b == NULL)
@@ -34,9 +36,15 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else if (tempc == '1')
 		{
-			total += svalue;
-			svalue *= 2;
-			i--;
+			if (g = 0)
+			{
+				total += svalue;
+				svalue *= 2;
+				i--;
+				g = 10;
+			}
+			else
+				total++;
 		}
 		else
 			return (0);
