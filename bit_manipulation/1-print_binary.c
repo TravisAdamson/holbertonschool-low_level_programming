@@ -24,10 +24,10 @@ void print_binary(unsigned long int n)
 			test = 1;
 		if (test == 1)
 		{
-			if (( n >> i) & 1)
-				_putchar(1);
+			if ((n >> i) & 1)
+				_putchar('1');
 			else
-				_putchar(0);
+				_putchar('0');
 		}
 	}
 
