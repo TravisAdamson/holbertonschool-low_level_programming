@@ -12,13 +12,11 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int i;
-	int g;
 	unsigned int total;
 	unsigned int svalue;
 	char tempc = 0;
 
 	svalue = 1;
-	g = 0;
 	i = 0;
 	total = 1;
 	if (b == NULL)
