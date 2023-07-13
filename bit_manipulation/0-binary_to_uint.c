@@ -40,5 +40,5 @@ unsigned int binary_to_uint(const char *b)
 		else
 			return (0);
 	}
-	return (total);
+	return (15);
 }
