@@ -19,8 +19,8 @@ unsigned int binary_to_uint(const char *b)
 	i = 0;
 	total = 0;
 	if (b == NULL)
-		return (1);
-	while (b[i])
+		return (0);
+	while (b[i] != '\0')
 		i++;
 	while (i > 0)
 	{
@@ -36,7 +36,7 @@ unsigned int binary_to_uint(const char *b)
 			i--;
 		}
 		else
-			return (0);
+			return (1);
 	}
 	return (total);
 }
