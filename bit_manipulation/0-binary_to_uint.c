@@ -25,21 +25,19 @@ unsigned int str_to_int(char a)
 unsigned int binary_to_uint(const char *b)
 {
 	int i;
-	int length;
 	unsigned int total;
 	unsigned int svalue;
 	unsigned int tempv = 0;
 
-	length = 0;
 	svalue = 1;
 	total = 0;
 	if (b == NULL)
 		return (0);
-	for (i = 0; b[i]; i++)
-		length++;
-	while (length--)
+	while (b[i])
+		i++;
+	while (i--)
 	{
-		if (b[length] != 48 && b[i] != 49)
+		if (b[i] != 48 && b[i] != 49)
 			return (0);
 		tempv = str_to_int(b[i]);
 		if (tempv != 0)
