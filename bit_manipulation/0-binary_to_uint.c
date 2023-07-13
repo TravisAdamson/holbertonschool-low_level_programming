@@ -14,6 +14,7 @@ unsigned int binary_to_uint(const char *b)
 	int i;
 	unsigned int total;
 	unsigned int svalue;
+	char tempc = 0;
 
 	svalue = 1;
 	i = 0;
@@ -24,19 +25,20 @@ unsigned int binary_to_uint(const char *b)
 		i++;
 	while (i > 0)
 	{
-		if (b[i] == 48)
+		tempc = b[i];
+		if (tempc == 48)
 		{
 			svalue++;
 			i--;
 		}
-		else if (b[i] == 49)
+		else if (tempc == 49)
 		{
 			total += 1 << svalue;
 			svalue++;
 			i--;
 		}
 		else
-			return (1);
+			return (0);
 	}
 	return (total);
 }
