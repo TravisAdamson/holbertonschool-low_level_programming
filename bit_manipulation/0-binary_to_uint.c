@@ -15,6 +15,8 @@ unsigned int binary_to_uint(const char *b)
 	int length;
 	unsigned int total;
 	unsigned int svalue;
+	unsigned int tempv = 0;
+	char tempc = 0;;
 
 	length = 0;
 	svalue = 1;
