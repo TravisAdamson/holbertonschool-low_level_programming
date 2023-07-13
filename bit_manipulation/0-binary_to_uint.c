@@ -12,7 +12,7 @@
 
 unsigned int str_to_int(char a)
 {
-	return ((unsigned int) a - '0');
+	return ((unsigned int) a + '0');
 }
 /**
  * binary_to_uint - Converts a string of 0 and 1s to a uint
