@@ -31,19 +31,20 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int tempv = 0;
 
 	length = 0;
-	svalue = 1;
+	svalue = 0;
 	total = 0;
-	if (!b)
+	if (b == NULL)
 		return (0);
 	for (i = 0; b[i]; i++)
 		length++;
-	for (i = length - 1; i <= 0; i--, svalue *= 2)
+	while (length--)
 	{
-		if (b[i] != 1 && b[i] != 0)
+		if (b[length] != 48 && b[i] != 49)
 			return (0);
 		tempv = str_to_int(b[i]);
 		if (tempv != 0)
-			total = total + (tempv * svalue);
+			total += 1 << svalue;
+		svalue++;
 	}
 	return (total);
 }
