@@ -26,15 +26,15 @@ unsigned int binary_to_uint(const char *b)
 	while (i > 0)
 	{
 		tempc = b[i];
-		if (tempc == 48)
+		if (tempc == '0')
 		{
-			svalue++;
+			svalue *= 2;
 			i--;
 		}
-		else if (tempc == 49)
+		else if (tempc == '1')
 		{
-			total += 1 << svalue;
-			svalue++;
+			total += svalue;
+			svalue *= 2;
 			i--;
 		}
 		else
