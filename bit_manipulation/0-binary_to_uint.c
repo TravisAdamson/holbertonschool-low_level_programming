@@ -12,7 +12,10 @@
 
 unsigned int str_to_int(char a)
 {
-	return ((unsigned int) a + '0');
+	if (a == 0)
+		return ((unsigned int) '0')
+	else
+		return ((unsigned int) '1')
 }
 /**
  * binary_to_uint - Converts a string of 0 and 1s to a uint
@@ -35,7 +38,7 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	for (i = 0; b[i]; i++)
 		length++;
-	for (i = length - 1; i < 0; i--, svalue *= 2)
+	for (i = length - 1; i <= 0; i--, svalue *= 2)
 	{
 		if ((b[i] != 1) && (b[i] != 0))
 			return (0);
