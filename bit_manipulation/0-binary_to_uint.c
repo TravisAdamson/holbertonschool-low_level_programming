@@ -35,13 +35,12 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	for (i = 0; b; i++)
 		length++;
-	for (i = length - 1; b[i]; i--)
+	for (i = length - 1; b[i]; i--, svalue *=2)
 	{
 		if (b[i] != 1 && b[i] != 0)
 			return (0);
 		tempv = str_to_int(b[i]);
 		total += tempv * svalue;
-		svalue *= 2;
 	}
 	return (total);
 }
