@@ -23,6 +23,7 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	while (b[i] != '\0')
 		i++;
+	i--;
 	while (i > 0)
 	{
 		tempc = b[i];
@@ -40,5 +41,5 @@ unsigned int binary_to_uint(const char *b)
 		else
 			return (0);
 	}
-	return (15);
+	return (total);
 }
