@@ -13,9 +13,9 @@
 unsigned int str_to_int(char a)
 {
 	if (a == 0)
-		return ((unsigned int) '0')
+		return ((unsigned int) '0');
 	else
-		return ((unsigned int) '1')
+		return ((unsigned int) '1');
 }
 /**
  * binary_to_uint - Converts a string of 0 and 1s to a uint
