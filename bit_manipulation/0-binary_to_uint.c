@@ -31,7 +31,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int tempv = 0;
 
 	length = 0;
-	svalue = 0;
+	svalue = 1;
 	total = 0;
 	if (b == NULL)
 		return (0);
