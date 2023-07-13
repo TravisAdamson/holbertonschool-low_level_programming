@@ -35,9 +35,9 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	for (i = 0; b[i]; i++)
 		length++;
-	for (i = length; b[i]; i--, svalue *= 2)
+	for (i = length - 1; b[i]; i--, svalue *= 2)
 	{
-		if (b[i] != 1 && b[i] != 0)
+		if ((b[i] != 1) && (b[i] != 0))
 			return (0);
 		tempv = str_to_int(b[i]);
 		total += tempv * svalue;
