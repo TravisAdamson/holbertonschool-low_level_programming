@@ -24,7 +24,7 @@ unsigned int binary_to_uint(const char *b)
 	while (b[i] != '\0')
 		i++;
 	i--;
-	while (i > 0)
+	while (i => 0)
 	{
 		tempc = b[i];
 		if (tempc == '0')
