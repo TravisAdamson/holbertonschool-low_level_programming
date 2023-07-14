@@ -19,7 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	total = 0;
 	rstatus = 1;
-	while (letters > BSIZE && rstatus !=0)
+	while (letters > BSIZE && rstatus != 0)
 	{
 		rstatus = read(name, buffer, BSIZE);
 		write(STDOUT_FILENO, buffer, rstatus);
