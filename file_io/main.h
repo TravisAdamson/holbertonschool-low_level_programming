@@ -7,7 +7,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#define BSIZE 1204
+#define BSIZE 1024
 
 ssize_t read_textfile(const char *filename, size_t letters);
 int _putchar(char c);

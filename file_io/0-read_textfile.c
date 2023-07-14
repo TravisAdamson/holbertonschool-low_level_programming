@@ -14,7 +14,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (filename == NULL)
 		return (0);
-	name = open(filename, O-RDONLY);
+	name = open(filename, 0-RDONLY);
 	if (name == -1)
 		return (0);
 	total = 0;
