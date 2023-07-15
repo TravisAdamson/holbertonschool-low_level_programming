@@ -26,7 +26,7 @@ int main(int ac, char *av[])
 	{
 		rstat = read(ostat, buffer, BSIZE);
 		if (rstat == -1)
-			dprintf(STDERR_FILENO, "Error: Can't read from %s\n", av[1]), exit(98);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 		if (rstat > 0)
 		{
 			wstat = write(nostat, buffer, rstat);
@@ -35,8 +35,8 @@ int main(int ac, char *av[])
 		}
 	}
 	if (close(ostat) == -1)
-		dprintf(STDERR_FILENO, "Error: Can't close %s\n", av[1]), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", ostat), exit(100);
 	if (close(nostat) == -1)
-		dprintf(STDERR_FILENO, "Error: Can't close %s\n", av[2]), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", nostat), exit(100);
 	return (0);
 }
