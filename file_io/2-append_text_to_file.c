@@ -13,7 +13,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (filename == NULL)
 		return (-1);
-	name = open(filename, O_APPEND);
+	name = open(filename, O_CREATE | O_APPEND);
 	if (name == -1)
 		return (-1);
 	if (text_content == NULL)
@@ -24,7 +24,6 @@ int append_text_to_file(const char *filename, char *text_content)
 	for (length = 0; text_content[length]; length++)
 		;
 	wstat = write(name, text_content, length);
-	perror("Error writing to file");
 	if (close(name) == -1)
 		return (-1);
 	if (wstat == -1)
