@@ -13,8 +13,8 @@ int create_file(const char *filename, char *text_content)
 
 	if (filename == NULL)
 		return (-1);
-	if (!(access(filename, 2)))
-		name = open(filename, O_WRONLY | O_CREAT | O_TRUNC);
+	if (access(filename, 2))
+		name = open(filename, O_CREAT | O_TRUNC);
 	else
 		name = open(filename, O_RDWR | O_CREAT | O_TRUNC);
 	if (name == -1)
