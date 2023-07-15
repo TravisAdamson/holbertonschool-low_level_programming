@@ -11,7 +11,7 @@ int main(int ac, char *av[])
 {
 	int rstat, ostat, nostat, wstat;
 	char buffer[BSIZE];
-	mode_t Permit = S_IRUSR | S_IWUSR | S_IWGRP | S_IRGRP | S_IROTH
+	mode_t Permit = S_IRUSR | S_IWUSR | S_IWGRP | S_IRGRP | S_IROTH;
 
 	if (ac != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n", exit(97));
