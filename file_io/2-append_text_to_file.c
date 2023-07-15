@@ -14,6 +14,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 	name = open(filename, O_APPEND);
+	printf("%d\n", name);
 	if (name == -1)
 		return (-1);
 	if (text_content == NULL)
