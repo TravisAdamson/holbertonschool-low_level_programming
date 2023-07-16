@@ -18,7 +18,7 @@ int pop_listint(listint_t **head)
 	{
 		templisth = currenth = *head;
 		rvalue = currenth->n;
-		*head = current->next;
+		*head = currenth->next;
 		free(templisth);
 	}
 	else
