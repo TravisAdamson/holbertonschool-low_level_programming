@@ -12,16 +12,16 @@
 int pop_listint(listint_t **head)
 {
 	int rvalue;
-	listint_t *newhead;
+	listint_t *currenth;
 
-	rvalue = (*head)->n;
-	if (head == NULL)
-		return (0);
-	newhead = malloc(sizeof(listint_t));
-	if (newhead == NULL)
-		return (0);
-	newhead = (*head)->next;
-	*head = newhead;
-	free(newhead);
+	if (*head)
+	{
+		currenth = *head;
+		rvalue = currenth->n;
+		*head = current->next;
+		free(current);
+	}
+	else
+		rvalue = 0;
 	return (rvalue);
 }
