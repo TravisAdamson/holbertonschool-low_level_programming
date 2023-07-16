@@ -14,14 +14,14 @@ int pop_listint(listint_t **head)
 	int rvalue;
 	listint_t *temph, *newhead;
 
-	rvalue = head->n;
+	rvalue = (*head)->n;
 	if (head == NULL)
-		return (NULL);
+		return (0);
 	newhead = malloc(sizeof(listint_t));
 	if (newhead == NULL)
-		return (NULL);
-	newhead = head->next;
-	head = newhead;
+		return (0);
+	newhead = (*head)->next;
+	*head = *newhead;
 	free(newhead);
 	return (rvalue);
 }
