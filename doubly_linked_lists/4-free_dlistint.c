@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * free_distint - Free the elements of the given list
+ * free_dlistint - Free the elements of the given list
  * @head: The list to be freed
  *
  * Return: No Return
