@@ -26,22 +26,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_node = malloc(sizeof(hash_node_t));
 	if (new_node == NULL)
 		return (0);
-	new_node->key = (char *)tkey;
+	new_node->key = tkey;
 	new_node->value = tvalue;
 	index = key_index((unsigned const char *)tkey, ht->size);
 	if (!index)
 		return (0);
-	tkeyi = ht->array[index];
-	if (!tkeyi)
-		return (0);
-	if (tkeyi->next == NULL)
-		new_node->next = NULL;
-	else
-		new_node->next = tkeyi->next;
-	tnode = ht->array[index - 1];
-	if (tnode == NULL)
-		return (1);
-	tnode->next = new_node;
+	new_node->next = ht->array[index];
 	ht->array[index] = new_node;
 	return (1);
 }
