@@ -23,7 +23,7 @@ void hash_table_print(const hash_table_t *ht)
 		for (i = 0; i < size; i++)
 		{
 			temp = ht->array[i];
-			if (temp->key && temp->value)
+			if ((temp->key != NULL) && (temp->value != NULL))
 			{
 				tkey = temp->key;
 				tvalue = temp->value;
