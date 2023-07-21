@@ -16,18 +16,19 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	char *tvalue;
+	char *tvalue, *tkey;
 	hash_node_t *new_node, *tnode;
 
 	if (!key)
 		return (0);
+	tkey = strdup(key);
 	tvalue = strdup(value);
 	new_node = malloc(sizeof(hash_node_t));
 	if (new_node == NULL)
 		return (0);
-	new_node->key = (char *)key;
+	new_node->key = (char *)tkey;
 	new_node->value = tvalue;
-	index = key_index((unsigned const char *)key, ht->size);
+	index = key_index((unsigned const char *)tkey, ht->size);
 	if (!index)
 		return (0);
 	if (ht->array[index + 1] == NULL)
