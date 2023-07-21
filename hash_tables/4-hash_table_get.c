@@ -12,7 +12,7 @@
  *
  * Return: Value if successful NULL if not
  */
-char *hash_table_get(hash_table_t *ht, const char *key)
+char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int index;
 	char *tkey;
