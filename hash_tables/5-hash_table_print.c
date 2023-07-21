@@ -19,6 +19,7 @@ void hash_table_print(const hash_table_t *ht)
 
 	if (ht != NULL)
 	{
+		size = ht->size;
 		for (i = 0; i < size; i++)
 		{
 			temp = ht->array[i];
