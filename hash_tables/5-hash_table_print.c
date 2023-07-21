@@ -11,7 +11,7 @@
  *
  * Return: No return
  */
-void *hash_table_print(const hash_table_t *ht)
+void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i, size;
 	hash_node_t *temp;
