@@ -17,21 +17,35 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
 	char *tvalue, *tkey;
-	hash_node_t *new_node;
+	hash_node_t *new_node, *temp;
 
 	if (!key)
 		return (0);
 	tkey = strdup(key);
 	tvalue = strdup(value);
-	new_node = malloc(sizeof(hash_node_t));
-	if (new_node == NULL)
-		return (0);
 	index = key_index((unsigned const char *)tkey, ht->size);
 	if (!index)
 		return (0);
+	temp = ht->array[index];
+	while (temp != NULL)
+	{
+		if (strncmp(key, temp->key, strlen(key)) == 0)
+		{
+			free(temp->value);
+			temp->value = tvalue;
+			if (temp->value == NULL)
+				return (0);
+			else
+				return (1);
+		}
+		temp = temp->next;
+	}
+	new_node = malloc(sizeof(hash_node_t));
+	if (!new_node)
+		return (0);
 	new_node->key = tkey;
 	new_node->value = tvalue;
-	new_node->next = NULL;
+	new_node->next = ht->array[index];
 	ht->array[index] = new_node;
 	return (1);
 }
