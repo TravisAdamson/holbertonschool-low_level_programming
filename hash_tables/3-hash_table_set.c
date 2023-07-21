@@ -19,7 +19,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	char *tvalue, *tkey;
 	hash_node_t *new_node, *temp;
 
-	if (!key)
+	if ((!key) || (!ht))
 		return (0);
 	tkey = strdup(key);
 	tvalue = strdup(value);
