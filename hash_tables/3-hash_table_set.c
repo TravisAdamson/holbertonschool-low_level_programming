@@ -31,6 +31,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!index)
 		return (0);
 	tkey = ht->array[index];
+	if (!tkey)
+		return (0);
 	if (tkey->next == NULL)
 		new_node->next = NULL;
 	else
@@ -39,5 +41,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (tnode == NULL)
 		return (1);
 	tnode->next = new_node;
+	ht->array[index] = new_node;
 	return (1);
 }
