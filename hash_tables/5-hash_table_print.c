@@ -17,12 +17,12 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *temp;
 	char *tkey, *tvalue;
 
+	j = 0;
 	if (ht != NULL)
 	{
 		putchar('{');
 		for (i = 0; i < ht->size; i++)
 		{
-			j = 0;
 			if (ht->array[i] != NULL)
 			{
 				temp = ht->array[i];
