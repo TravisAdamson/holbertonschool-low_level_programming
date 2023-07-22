@@ -32,12 +32,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		if (strncmp(key, temp->key, strlen(key)) == 0)
 		{
 			free(temp->value);
+			free(tkey);
 			temp->value = tvalue;
 			if (temp->value == NULL)
-			{
-				free(temp->value);
 				return (0);
-			}
 			else
 				return (1);
 		}
