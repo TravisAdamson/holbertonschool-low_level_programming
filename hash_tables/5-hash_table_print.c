@@ -32,7 +32,7 @@ void hash_table_print(const hash_table_t *ht)
 						printf(", ");
 					tkey = temp->key;
 					tvalue = temp->value;
-					printf("'%s' : '%s'", tkey, tvalue);
+					printf("'%s': '%s'", tkey, tvalue);
 					temp = temp->next;
 					j = 1;
 				}
