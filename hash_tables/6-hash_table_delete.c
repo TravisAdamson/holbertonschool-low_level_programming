@@ -13,7 +13,9 @@
  */
 void hash_node_delete(hash_node_t *temp)
 {
-	hash_node_delete(*temp->next);
+	if (temp == NULL)
+		return;
+	hash_node_delete(temp->next);
 	free(temp->key);
 	free(temp->value);
 	free(temp);
@@ -38,7 +40,7 @@ void hash_table_delete(hash_table_t *ht)
 			{
 				temp = ht->array[i];
 				if (temp != NULL)
-					hash_node_delete(*temp);
+					hash_node_delete(temp);
 			}
 		}
 	}
