@@ -13,7 +13,7 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned long int i;
+	unsigned long int i, j;
 	hash_node_t *temp;
 	char *tkey, *tvalue;
 
@@ -22,17 +22,19 @@ void hash_table_print(const hash_table_t *ht)
 		putchar('{');
 		for (i = 0; i < ht->size; i++)
 		{
+			j = 0;
 			if (ht->array[i] != NULL)
 			{
 				temp = ht->array[i];
 				while (temp)
 				{
+					if (j > 0)
+						printf(", ");
 					tkey = temp->key;
 					tvalue = temp->value;
-					printf("%s : %s", tkey, tvalue);
+					printf("'%s' : '%s'", tkey, tvalue);
 					temp = temp->next;
-					if (temp)
-						printf(", ");
+					j = 1;
 				}
 			}
 		}
