@@ -41,7 +41,7 @@ void print_array(int *array, size_t low, size_t high)
 
 	i = low;
 	printf("Searching in array: ");
-	while (array && i < high)
+	while (array && i <= high)
 	{
 		if (i > low)
 			printf(", ");
