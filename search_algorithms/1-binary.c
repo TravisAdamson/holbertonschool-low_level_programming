@@ -9,7 +9,7 @@
  * Return: The index of the array where value is, or -1 on fail
  */
 
-int linear_search(int *array, size_t size, int value)
+int binary_search(int *array, size_t size, int value)
 {
 	size_t low = 0, high = size - 1, middle = 0;
 
